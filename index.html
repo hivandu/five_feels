@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html ID="html">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<title></title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="viewport" content="width=375,maximum-scale=1.3,user-scalable=no,minimal-ui"/>
+    <meta name="apple-touch-fullscreen" content="no"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+
+    <!-- vendor css -->
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet/less" href="less/type.less">
+    <!-- js -->
+    <script src="js/jqueyr-2.1.1.js"></script>
+    <!-- less compiler -->
+    <script src="js/less.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <style>
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #f2ebdb;
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+
+        .block-content *{
+            opacity: 0;
+            transform: translate3d(0, -600%, 0);
+            -webkit-transform: translate3d(0, -600%, 0);
+        }
+
+        .block-content.moveToNextScene * {
+             opacity: 1;
+             -webkit-transform: translate3d(0,800px,0px) rotateZ(0deg);
+             -webkit-transition: -webkit-transform 4s;
+         }
+        .scene02 .block-content.moveToNextScene .wangyou{
+            opacity: 1;
+            -webkit-transform: translate3d(0,800px,0px) rotateZ(130deg);
+            -webkit-transition: -webkit-transform 4s;
+        }
+        .scene02 .block-content.moveToNextScene .touzuo{
+            opacity: 1;
+            -webkit-transform: translate3d(0,800px,0px) rotateZ(80deg);
+            -webkit-transition: -webkit-transform 4s;
+        }
+        .scene02 .block-content.moveToNextScene .renwu{
+            opacity: 1;
+            -webkit-transform: translate3d(0,600px,0px) rotateZ(80deg);
+            -webkit-transition: -webkit-transform 4s;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <!-- Swiper -->
+        <div class="swiper-container">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide scene01" >
+
+                    <!-- logo -->
+                    <img src="images/scene/logo.png" width="76" class="logo" data-swiper-parallax="100">
+
+                    <img src="images/scene/wangzuo.png" style="width: 59px;" class="wangzuo " data-swiper-parallax="180" >
+                    <img src="images/scene/wangyou.png" style="width: 59px;" class="wangyou " data-swiper-parallax="400">
+                    <img src="images/scene/chushang.png" style="width: 33px;" class="chushang" data-swiper-parallax="200">
+                    <img src="images/scene/chuxia.png" style="width: 40px;" class="chuxia" data-swiper-parallax="100">
+                    <img src="images/scene/fengtou.png" style="width: 111px;" class="fengtou" data-swiper-parallax="300">
+                    <img src="images/scene/fengxia.png" style="width:42.5px;" class="fengxia" data-swiper-parallax="100">
+                    <img src="images/scene/touzuo.png" style="width: 51px;" class="touzuo" data-swiper-parallax="300">
+                    <img src="images/scene/touyou.png" style="width: 58px;" class="touyou" data-swiper-parallax="-400">
+
+                    <!-- 玩字 -->
+                    <img src="images/scene/w1.png" width="3" class="w1">
+                    <img src="images/scene/w1.png" width="2" class="w1-2">
+                    <img src="images/scene/w1.png" width="2" class="w1-3">
+                    <img src="images/scene/w1.png" width="3" class="w1-4">
+                    <!-- 出字碎片 -->
+                    <img src="images/scene/s1.png" width="7" class="s1">
+                    <img src="images/scene/s1.png" width="5" class="s1-2" data-swiper-parallax="400">
+                    <img src="images/scene/s1.png" width="3" class="s1-3" data-swiper-parallax="400">
+                    <img src="images/scene/s1.png" width="3" class="s1-4" data-swiper-parallax="400">
+                    <img src="images/scene/s1.png" width="3" class="s1-5" data-swiper-parallax="400">
+                    <img src="images/scene/s2.png" width="14" class="s2" data-swiper-parallax="400" >
+                    <img src="images/scene/z1.png" width="5" class="z1">
+                    <!-- 头 -->
+                    <img src="images/scene/yArr.png" width="73" class="yArr" data-swiper-parallax="400">
+                    <img src="images/scene/y1.png"   width="6" class="yArr-01" style="">
+                    <img src="images/scene/y1.png"   width="4" class="yArr-02">
+                    <img src="images/scene/y1.png"   width="3" class="yArr-03">
+                    <img src="images/scene/y1.png"   width="3" class="yArr-04">
+
+                    <!-- 人物 -->
+
+                    <img src="images/scene/renwu.png" width="270" class="renwu" data-swiper-parallax="200">
+                    <img src="images/scene/zhishu.png" width="55" class="zhishu">
+
+                    <!-- 风线 -->
+                    <img src="images/scene/feng1.png" width="36" class="f1">
+                    <img src="images/scene/feng2.png" width="59" class="f2">
+                    <!-- 文字 -->
+                    <img src="images/scene/text.png" width="17" class="text" data-swiper-parallax="-400">
+                    <!-- up down -->
+                    <img src="images/scene/updown.png" width="40" class="down" data-swiper-parallax="200">
+
+                </div>
+
+
+                <div class="swiper-slide scene02"   >
+                    <div class="block-content">
+                        <!-- logo -->
+                        <img src="images/scene/logo.png" width="76">
+
+                        <img src="images/scene/wangzuo.png" style="width: 59px;" class="wangzuo "  >
+                        <img src="images/scene/wangyou.png" style="width: 59px;" class="wangyou " >
+                        <img src="images/scene/chushang.png" style="width: 33px;" class="chushang" >
+                        <img src="images/scene/chuxia.png" style="width: 40px;" class="chuxia">
+                        <img src="images/scene/fengtou.png" style="width: 111px;" class="fengtou">
+                        <img src="images/scene/fengxia.png" style="width:42.5px;" class="fengxia">
+                        <img src="images/scene/touzuo.png" style="width: 51px;" class="touzuo" >
+                        <img src="images/scene/touyou.png" style="width: 58px;" class="touyou">
+
+                        <!-- 玩字 -->
+                        <img src="images/scene/w1.png" width="3" class="w1">
+                        <img src="images/scene/w1.png" width="2" class="w1-2">
+                        <img src="images/scene/w1.png" width="2" class="w1-3">
+                        <img src="images/scene/w1.png" width="3" class="w1-4">
+                        <!-- 出字碎片 -->
+                        <img src="images/scene/s1.png" width="7" class="s1">
+                        <img src="images/scene/s1.png" width="5" class="s1-2" >
+                        <img src="images/scene/s1.png" width="3" class="s1-3" >
+                        <img src="images/scene/s1.png" width="3" class="s1-4">
+                        <img src="images/scene/s1.png" width="3" class="s1-5" >
+                        <img src="images/scene/s2.png" width="14" class="s2"  >
+                        <img src="images/scene/z1.png" width="5" class="z1">
+                        <!-- 头 -->
+                        <img src="images/scene/yArr.png" width="73" class="yArr" >
+                        <img src="images/scene/y1.png"   width="6" class="yArr-01" style="">
+                        <img src="images/scene/y1.png"   width="4" class="yArr-02">
+                        <img src="images/scene/y1.png"   width="3" class="yArr-03">
+                        <img src="images/scene/y1.png"   width="3" class="yArr-04">
+
+                        <!-- 人物 -->
+                        <img src="images/scene/zhishu.png" width="70" class="zhishu">
+
+                        <!-- 风线 -->
+                        <img src="images/scene/feng1.png" width="36" class="f1">
+                        <img src="images/scene/feng2.png" width="59" class="f2">
+                        <!-- 文字 -->
+                        <img src="images/scene/text.png" width="17" class="text">
+                    </div>
+                </div>
+
+                <div class="swiper-slide scene03"  >
+
+                    <div class="page3 pageBox" data-swiper-parallax="-180" style="display: block">
+
+                        <div class="rotateIn-box ">
+                            <img src="images/eye/eyeMian.png" width="264" class="eye_main" data-swiper-parallax="200">
+                            <!-- 左上 -->
+                            <img src="images/eye/xuehua.png"  width="10" class="eye_xuehua">
+                            <img src="images/eye/xin.png"     width="9" class="eye_xin">
+                            <img src="images/eye/xuehua1.png" width="10" class="eye_xuehua1">
+                            <img src="images/eye/xyan.png"    width="12" class="eye_xyan">
+
+                            <!-- 左下 -->
+                            <div class="eye_yu"></div>
+
+                            <!-- 下 -->
+                            <img src="images/eye/wyj.png"    width="55" class="eye_wyj">
+                            <img src="images/eye/wyj2.png"   width="30" class="eye_wyj2">
+                            <img src="images/eye/people.png" width="34" class="eye_people">
+                            <img src="images/eye/xx.png"     width="50" class="eye_xx">
+
+                            <!-- 右 -->
+                            <img src="images/eye/tshi.png" width="32" class="eye_angel">
+                            <img src="images/eye/sj3.png"  width="16" class="eye_sj3">
+                            <img src="images/eye/sj4.png"  width="10" class="eye_sj4">
+                            <img src="images/eye/ylei.png" width="58" class="eye_ylei">
+                            <img src="images/eye/fdj.png"  width="22" class="eye_fdj">
+                            <img src="images/eye/sj1.png"  width="8" class="eye_sj1">
+                            <img src="images/eye/sj2.png"  width="7" class="eye_sj2">
+
+                            <!-- 眉毛 -->
+                            <img src="images/eye/eye_brow1.png" width="73" class="eye_brow1" >
+                            <img src="images/eye/eye_brow2.png" width="171" class="eye_brow2">
+                            <img src="images/eye/eye_brow3.png" width="54" class="eye_brow3">
+                            <!-- 中 -->
+                            <img src="images/eye/eye_dish.png" width="75" class="eye_dish">
+                            <img src="images/eye/eye_ball.png" width="79" class="eye_ball" data-swiper-parallax="23%">
+                            <img src="images/eye/eye_chip.png" width="23" class="eye_chip">
+
+                            <div class="ball_box">
+                                <span class="y1">&nbsp;</span>
+                                <span class="y2">&nbsp;</span>
+                                <span class="y3">&nbsp;</span>
+                                <span class="y4">&nbsp;</span>
+                                <span class="y5">&nbsp;</span>
+                                <span class="y6">&nbsp;</span>
+                                <span class="y7">&nbsp;</span>
+                                <span class="y8">&nbsp;</span>
+                                <span class="y9">&nbsp;</span>
+                                <span class="y10">&nbsp;</span>
+                                <span class="y11">&nbsp;</span>
+                                <span class="y12">&nbsp;</span>
+                                <span class="y13">&nbsp;</span>
+                                <span class="y14">&nbsp;</span>
+                                <span class="y15">&nbsp;</span>
+                                <span class="y16">&nbsp;</span>
+                                <span class="y17">&nbsp;</span>
+                            </div>
+
+                            <div class="ball_box2">
+                                <span class="y1">&nbsp;</span>
+                                <span class="y2">&nbsp;</span>
+                                <span class="y3">&nbsp;</span>
+                                <span class="y4">&nbsp;</span>
+                                <span class="y5">&nbsp;</span>
+                                <span class="y6">&nbsp;</span>
+                            </div>
+
+                        </div>
+
+                        </div>
+                    <div class="page3-text pageText" style="display: block">
+                        <img src="images/eye/text.png" width="122" alt=""/>
+                    </div>
+                    
+                    <img src="images/eye.png" width="375" class="two-box">
+                    
+                </div><!-- 03 -->
+
+                <div class="swiper-slide scene04"  >
+                    <div class="page4 pageBox" data-swiper-parallax="-160" style="display: none">
+                        <div class="rotateIn-box ">
+                        <!-- 耳朵上下 -->
+                            <img src="images/ehr/ear_2.png" width="181" class="ear_2" data-swiper-parallax="300">
+                            <img src="images/ehr/ear_1.png" width="158" class="ear_1">
+                            <!-- 声音 -->
+                            <div class="sheny">
+                                &nbsp;
+                            </div>
+
+                            <!-- 齿轮 -->
+                            <img src="images/ehr/ear_gear1.png" width="35" class="ear_gear1">
+                            <img src="images/ehr/ear_gear2.png" width="17" class="ear_gear2">
+                            <img src="images/ehr/ear_gear3.png" width="19" class="ear_gear3">
+
+                            <img src="images/ehr/ear_headset.png" width="25" class="ear_headset">
+
+                            <div class="ball_box2">
+                            <span class="y1">&nbsp;</span>
+                            <span class="y2">&nbsp;</span>
+                            <span class="y3">&nbsp;</span>
+                            <span class="y4">&nbsp;</span>
+                            <span class="y5">&nbsp;</span>
+                            <span class="y6">&nbsp;</span>
+                                <img src="images/eye/sj1.png" width="8">
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="page4-text pageText" style="display: none">
+                        <img src="images/ehr/text.png" width="116">
+                    </div>
+                    <img src="images/ehr.png" width="375" class="two-box">
+                </div>
+
+                <div class="swiper-slide scene05"  >
+                    <div class="page5 pageBox" data-swiper-parallax="-180" style="display: none">
+                        <div class="rotateIn-box ">
+                            <img src="images/nose/nose_onup.png" width="76" class="nose_onup" data-swiper-parallax="200">
+                            <img src="images/nose/nose_on3.png" width="151" class="nose_on3" data-swiper-parallax="-200">
+                            <img src="images/nose/nose_on2.png" width="127" class="nose_on2" data-swiper-parallax="250">
+                            <img src="images/nose/nose_on4.png" width="36" class="nose_on4" data-swiper-parallax="-200">
+                            <img src="images/nose/nose_pattern1.png" width="38" class="nose_pattern1"data-swiper-parallax="300">
+                            <img src="images/nose/nose_drop.png" width="19" class="nose_drop">
+                            <img src="images/nose/nose_under.png" width="218" class="nose_under" data-swiper-parallax="200">
+                            <div class="sheny">
+                            &nbsp;
+                            </div>
+                            <img src="images/nose/nose_pattern3.png" width="79" class="nose_pattern3">
+                            <!-- 花 -->
+                            <img src="images/nose/nose_pattern2.png" width="34" class="nose_pattern2" data-swiper-parallax="-200">
+                            <img src="images/nose/nose_people.png" width="80" class="nose_people">
+
+                            <!-- 七星 -->
+                            <img src="images/nose/nose_constellation.png" width="93" class="nose_constellation">
+                        </div>
+                    </div>
+
+
+                    <div class="page5-text pageText" style="display: none">
+                        <img src="images/nose/text.png" width="58" >
+                    </div>
+                    <div class="page5-text01 pageText" style="display: none">
+                        <img src="images/nose/text1.png" width="64" >
+                    </div>
+
+                    <img src="images/nose.png" width="375" class="two-box">
+
+                </div>
+
+                <div class="swiper-slide scene06"  >
+
+                    <div class="page6 pageBox"  style="display: none">
+                        <div class="rotateIn-box ">
+                            <img src="images/mouth/mouth_1.png" width="293" class="mouth_1" data-swiper-parallax="200">
+                            <img src="images/mouth/mouth_1bo.png" width="57" class="mouth_1bo" data-swiper-parallax="200">
+                            <img src="images/mouth/mouth_2.png" width="118" class="mouth_2">
+                            <img src="images/mouth/mouth_3.png" width="127" class="mouth_3" data-swiper-parallax="-200">
+                            <img src="images/mouth/mouth_4.png" width="106" class="mouth_4"data-swiper-parallax="200">
+                            <img src="images/mouth/mouth_5.png" width="93" class="mouth_5">
+                            <img src="images/mouth/mouth_6.png" width="116" class="mouth_6">
+
+                            <!-- 柠檬一半 -->
+                            <img src="images/mouth/mouth_lemon1.png" width="42" class="mouth_lemon1">
+                            <img src="images/mouth/mouth_lemon2.png" width="28" class="mouth_lemon2">
+                            <img src="images/mouth/mouth_mike.png" width="47" class="mouth_mike">
+
+                            <!-- 齿轮 -->
+                            <img src="images/mouth/mouth_gear1.png" width="9" class="mouth_gear1">
+                            <img src="images/mouth/mouth_gear2.png" width="10" class="mouth_gear2">
+
+                            <img src="images/mouth/mouth_red.png" width="16" class="mouth_red">
+                            <img src="images/mouth/mouth_green.png" width="15" class="mouth_green">
+                            <!-- people-->
+                            <img src="images/mouth/mouth_people.png" width="18" class="mouth_people">
+                        </div>
+                    </div>
+
+                    <div class="page6-text pageText" style="display: none">
+                        <img src="images/mouth/text.png" width="279">
+                    </div>
+
+                    <img src="images/mouth.png" width="375" class="two-box">
+
+                </div>
+
+                <div class="swiper-slide scene07"  >
+
+                    <div class="page7 pageBox" data-swiper-parallax="-180" style="display: none">
+                        <div class="rotateIn-box ">
+                           <img src="images/hand/hand_under1.png" width="105" class="hand_under1">
+                           <img src="images/hand/hand_on1.png" width="90" class="hand_on1" data-swiper-parallax="200">
+                           <img src="images/hand/hand_on2.png" width="89" class="hand_on2">
+                           <img src="images/hand/hand_on3.png" width="195" class="hand_on3" data-swiper-parallax="-200">
+
+                            <!-- 手下 -->
+                            <img src="images/hand/hand_under2.png" width="130" class="hand_under2" data-swiper-parallax="200">
+                            <img src="images/hand/hand_under3.png" width="122" class="hand_under3">
+
+                            <!-- 手中 -->
+                            <img src="images/hand/hand_tencer.png" width="108" class="hand_tencer">
+
+
+                            <!-- 手发光 -->
+                            <div class="hand-touch">
+                                &nbsp;
+                            </div>
+
+                            <!-- 瀑布 -->
+                            <div class="hand-pubu">
+                                &nbsp;
+                            </div>
+
+                            <!-- 大砖石 -->
+                            <img src="images/hand/hand_diamond.png" width="18" class="hand_diamond">
+                            <img src="images/hand/hand_day.png" width="29" class="hand_day">
+
+                            <img src="images/hand/hand_balloon.png" width="25" class="hand_balloon">
+                        </div>
+                    </div>
+
+                    <div class="page7-text pageText" style="display: none">
+                        <img src="images/hand/text.png" width="117">
+                    </div>
+
+                    <img src="images/hand.png" width="375" class="two-box">
+
+                </div>
+
+                <div class="swiper-slide scene08"  >
+
+                    <div class="page8" >
+                        <!-- logo -->
+                        <img src="images/scene/logo.png" width="76" class="logo2">
+                        <img src="images/scene/Tail_top.png" width="261" class="Tail_top">
+                        <span id="count_sum">98</span>
+                        <span id="count_sum2">98</span>
+                        <img src="images/scene/Tail_.png" width="191" class="Tail" data-swiper-parallax="-380">
+                    </div>
+
+                    <div class="page8-text" >
+                        <img src="images/scene/tail-text.png" width="256">
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+        <!-- Swiper JS -->
+        <script src="js/swiper.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script src="js/countUp.min.js"></script>
+        <script>
+            var options = {
+                useEasing : true,
+                useGrouping : true,
+                separator : ',',
+                decimal : '.',
+                prefix : '',
+                suffix : ''
+            };
+            var demo = new CountUp("count_sum", 00, 77, 0, 5.5, options);
+            var demo2 = new CountUp("count_sum2", 00, 77, 0, 5.5, options);
+        </script>
+        <script src="js/common.js"></script>
+    </div>
+
+</body>
+</html>
